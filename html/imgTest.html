@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>baseTest</title>
+  <base href="http://www.runoob.com/images/" target="_blank">
+
+  <meta name="description" content="免费在线教程">
+  <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+  <meta name="author" content="runoob">
+
+  <style type="text/css">
+    h3 {
+      color: red;
+    }
+
+    p {
+      color: blue;
+    }
+  </style>
+
+</head>
+
+<body>
+  <p><b>img test begin</b></p>
+  <br>
+  <img src="logo.png" border="0" alt="Pulpit rock" width="150" height="50">
+  <p>- 注意这里我们设置了图片的相对地址。<img src="http://www.runoob.com/try/demo_source/smiley.gif" alt="^_^" style="float:left" width="32" height="32">能正常显示是因为我们在 head 部分设置了 base 标签，该标签指定了页面上所有链接的默认 URL，所以该图片的访问地址为 "http://www.runoob.com/images/logo.png"</p>
+  <a href="http://www.runoob.com" style="text-decoration:none;">菜鸟教程<img src="logo.png" border="10"></a>
+  <a href="http://www.runoob.com/html/html-images.html"><img src="http://www.runoob.com/try/demo_source/smiley.gif"></a>
+  <br>
+  <img src="http://www.runoob.com/try/demo_source/planets.gif" usemap="planetmap">
+  <map name="planetmap">
+    <area href="http://www.runoob.com/try/demo_source/sun.htm" shape="rect" coords="0,0,82,126">
+    <area href="http://www.runoob.com/try/demo_source/mercur.htm" shape="circle" coords="90,58,3">
+    <area href="http://www.runoob.com/try/demo_source/venus.htm" shape="circle" coords="124,58,8">
+  </map>
+  <p>shape="rect" coords="x1,y1,x2,y2" 距形：(左上角顶点坐标为(x1,y1)，右下角顶点坐标为(x2,y2))<br> shape="circle" coords="x1,y1,r" 圆形：(圆心坐标为(X1,y1)，半径为r)<br> shape="poly" coords="x1,y1,x2,y2 ......" 多边形：(各顶点坐标依次为(x1,y1)、(x2,y2)、(x3,y3) ......)
+  </p>
+  <br>
+  <p><b>img test end</b></p>
+
+  <p>- 注意这个链接会在新窗口打开，即便它没有 target="_blank" 属性。因为在 base 标签里我们已经设置了 target 属性的值为 "_blank"。</p>
+
+  <br>
+  <br>
+
+  <div style="opacity:0.5;position:absolute;left:50px;width:300px;height:150px;background-color:#40B3DF"></div>
+
+  <div style="font-family:verdana;padding:20px;border-radius:10px;border:10px solid #EE872A;">
+
+    <div style="opacity:0.3;position:absolute;left:120px;width:100px;height:200px;background-color:#8AC007"></div>
+
+    <h3>Look! Styles and colors</h3>
+
+    <div style="letter-spacing:50px;">Manipulate Text</div>
+
+    <div style="color:#40B3DF;">Colors
+      <span style="background-color:#B4009E;color:#ffffff;">Boxes</span>
+    </div>
+    <div style="color:#000000;">and more...</div>
+
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>table test</title>
+  <script type="text/javascript">
+    function displayDate() {
+      document.getElementById("demo").innerHTML = Date();
+    }
+  </script>
+  <style type="text/css">
+    .btbg {
+      background: #e9faff !important;
+      font-family: 微软雅黑;
+      font-size: 16px;
+      font-weight: bold;
+      color: #255e95;
+    }
+
+    .btbg2 {
+      background: #f5f5f5 !important;
+    }
+  </style>
+</head>
+
+<body>
+  <table border="1" cellspacing="0" cellpadding="5">
+    <caption>This is title</caption>
+    <tr>
+      <td colspan="8" align="right" id="demo" onclick="displayDate()">
+        2017-8-4
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" rowspan="2" align="center" class="btbg">分类</td>
+      <td rowspan="2" align="center" class="btbg">第一项</td>
+      <td colspan="2" align="center" class="btbg">第二项</td>
+      <td colspan="3" align="center" class="btbg">第三项</td>
+    </tr>
+    <tr>
+      <td class="btbg2">2.1</td>
+      <td class="btbg2">2.2</td>
+      <td class="btbg2">3.1</td>
+      <td class="btbg2">3.2</td>
+      <td class="btbg2">3.3</td>
+    </tr>
+    <tr>
+      <td rowspan="2" align="center" class="btbg">成员</td>
+      <td class="btbg2">No.1</td>
+      <td>d1-1</td>
+      <td>d1-2.1</td>
+      <td>d1-2.2</td>
+      <td>d1-3.1</td>
+      <td>d1-3.2</td>
+      <td>d1-3.3</td>
+    </tr>
+    <tr>
+      <td class="btbg2">No.2</td>
+      <td>d2-1</td>
+      <td>d2-2.1</td>
+      <td>d2-2.2</td>
+      <td>d2-3.1</td>
+      <td>d2-3.2</td>
+      <td>d2-3.3</td>
+    </tr>
+    <tr>
+      <td colspan="2" align="center" class="btbg">合计</td>
+      <td>T1</td>
+      <td>T2.1</td>
+      <td>T2.2</td>
+      <td>T3.1</td>
+      <td>T3.2</td>
+      <td>T3.3</td>
+    </tr>
+  </table>
+</body>
+
+</html>
