@@ -1,0 +1,25 @@
+body{
+  color: red;
+  margin: 30px;
+}
+h1{
+  text-align: center;
+  text-transform: capitalize;
+  color: #00ff00;
+  text-shadow: 2px 2px #ff0000;
+}
+p.ex{
+  color: rgb(0,0,255);
+}
+
+p.date{
+  color: black;
+  text-align: right;
+}
+
+p.main{
+  color: black;
+  text-align: justify;
+  text-indent: 30px;
+  line-height: 150%;
+}
