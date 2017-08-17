@@ -1,24 +1,56 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
-<title>菜鸟教程(runoob.com)</title>
-<script>
-function displayDate(){
 
-	document.getElementById("demo").innerHTML=Date();
-	
-}
-</script>
+<head>
+	<meta charset="utf-8">
+	<title>Just a js test</title>
+	<script>
+		function displayDate() {
+			document.getElementById("demo").innerHTML = new Date();
+		}
+
+		function xixi() {
+			var r = Math.random();
+			var demo = document.getElementById("demo").innerHTML = "random=" + r;
+		}
+
+		function testForm() {
+			var str = document.forms["myform"]["search"].value;
+			str = str.trim();
+			if (str == null || str == "") {
+				alert("enter sth.");
+				return false;
+			}
+		}
+
+		function property() {
+			var txt = document.getElementById("demo");
+			var str;
+			for (v in Date) {
+				str += v + "<br>";
+			}
+			txt.innerHTML = str;
+		}
+	</script>
 </head>
+
 <body>
 
-<h1>我的第一个 JavaScript 程序</h1>
-<p id="demo">这是一个段落</p>
-<br>
+	<p id="demo">这是一个段落</p>
+	<br>
+	<button type="button" onclick="xixi()">Math.random</button>
 
+	<button type="button" onclick="displayDate()">显示日期</button>
+	<button type="button" onclick="alert('欢迎!')">点我!</button>
 
-<button type="button" onclick="displayDate()">显示日期</button>
-<button type="button" onclick="alert('欢迎!')">点我!</button>
+	<form action="http://www.baidu.com" method="post" name="myform">
+		<input type="text" name="tf" required>
+		<input type="submit" value="submit">
+	</form>
+
+	<br>
+	<button type="button" onclick="property()">Just Click</button>
+
 </body>
+
 </html>
